@@ -3,11 +3,11 @@ const app = express();
 const { uuid, isUuid } = require('uuidv4');
 
 
-app.use(express.json)
+app.use(express.json())
 
 const projects = []
 
-function logreqs(req, res, next) {
+function logRequest(req, res, next) {
     const { method, url } = req;
 
     const logLabel = `[${method.toUpperCase()}] ${url}`;
@@ -27,7 +27,7 @@ function validateProjectId(req, res, next) {
     return next();
 }
 
-app.use(logreqs)
+app.use(logRequest)
 
 app.use('/projects/:id', validateProjectId);
 
@@ -86,6 +86,6 @@ app.delete('/projects/:id', (req, res) => {
     return res.status(204).send();
 });
 
-app.listen(3030, () => {
+app.listen(3333, () => {
     console.log('🦖 Back-end rodando bonitão!')
 })
