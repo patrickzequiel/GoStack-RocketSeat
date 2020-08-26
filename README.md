@@ -5,8 +5,11 @@
 </h3>
 
 
-## 🦖 Bem Vindo!
+<h2 align="center"> 🦖 Bem Vindo! </h2>
+
+<p align="center">
 Aqui se encontram os códigos desenvolvidos durante o curso, juntamente com o os desafios para avaliação no andamento do bootcamp.
 
 Sirva-se a vontade para estudar e até aconselhar sobre o que poderia melhorar nas aplicações. 
+<p>
 
